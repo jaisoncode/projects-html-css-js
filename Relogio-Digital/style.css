@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #577fda, #4472de, #3064e0, #1b55e1, #0045e1);
+
+}
+
+.title {
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    color: white;
+    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5); ;
+}
+
+.content-center {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.box-time {
+    background-image: linear-gradient(to right bottom, #414141, #383838, #302f30, #292627, #211e1e);
+    width: 6rem;
+    height: 7rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.number-clock {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.legenda-number{
+    font-size: .9rem;
+    font-weight: 500;
+    
+}
