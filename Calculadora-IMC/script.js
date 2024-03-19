@@ -45,8 +45,9 @@ function exibir(imc, classificacao) {
                     <span>Seu IMC</span>
                 </div>
                 <span id="result-desc">` + classificacao + `</span>`;
-    document.querySelector('#result-IMC').style.display = 'block';
     document.querySelector('#result-IMC').innerHTML = code;
+    document.querySelector('#result-IMC').classList.add('result-IMC');
+
 }
 
 
