@@ -41,15 +41,27 @@ function calcIMC(peso, altura) {
 
 
 btnCalcular.addEventListener('click', function () {
-    calcIMC(inputPeso.value, inputAltura.value);
+
+    if (inputAltura.value.length === 3 
+        || inputAltura.value.length === 4
+        || inputAltura.value.length === 3) {
+        if (inputPeso.value.length === 3 || inputPeso.value.length === 2) {
+            calcIMC(inputPeso.value, inputAltura.value);
+        } else {
+            alert("preencha os campos corretamente");
+        }
+    } else {
+        alert("preencha os campos corretamente");
+    }
 });
 
 function exibir(imc, classificacao) {
+
     let code = `<div>
-                    <span id="result-value">` + imc.toFixed(2) + `</span>
-                    <span>Seu IMC</span>
-                </div>
-                <span id="result-desc">` + classificacao + `</span>`;
+            <span id="result-value">` + imc.toFixed(2) + `</span>
+            <span>Seu IMC</span>
+            </div>
+            <span id="result-desc">` + classificacao + `</span>`;
     document.querySelector('#result-IMC').innerHTML = code;
     document.querySelector('#result-IMC').classList.add('result-IMC');
 
