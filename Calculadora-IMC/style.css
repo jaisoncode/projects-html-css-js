@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    ;
+    background-color: #19181C;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content-principal {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #272627;
+    border-radius: 5px;
+}
+
+h1 {
+    border-bottom: #179848 solid 1px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #CDD6E5;
+    font-weight: 600;
+}
+
+input,
+button {
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #179848;
+    cursor: pointer;
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: #413F47;
+    font-size: 16px;
+    color: #CDD6E5;
+    font-weight: 600;
+
+}
+
+input::placeholder {
+    padding-left: 35px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.img-input {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 17px;
+    color: #CDD6E5;
+
+}
+
+#result-IMC {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    border-top: #179848 solid 1px;
+}
+
+#result-IMC div {
+    display: flex;
+    flex-direction: column;
+}
+
+#result-value{
+    font-size: 30px;
+    font-weight: 600;
+    color: #179848;
+}
+
+#result-value + span{
+    color:  white;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#result-desc{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-weight: 300;
+}
