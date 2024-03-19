@@ -5,10 +5,15 @@ const btnCalcular = document.querySelector('#btn-calcular');
 document.querySelector('#result-value');
 document.querySelector('#result-IMC');
 
+inputAltura.addEventListener('keypress', () => {
+    let mascara = inputAltura.value.length;
+    if (mascara === 1) {
+        inputAltura.value += '.';
+    }
+});
 
 function calcIMC(peso, altura) {
     let imc = peso / (altura * altura);
-    console.log(imc);
 
     if (imc < 16.9) {
         let classificacao = 'Muito abaixo do peso';
