@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #7b6ce6, #796be1, #7769dd, #7568d8, #7366d4);
+}
+
+.icon-notify {
+    color: white;
+}
+
+
+.content-principal {
+    background-color: #0F0939;
+    border-radius: 20px;
+    width: 270px;
+}
+
+.content-notification {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.content-notification span {
+    font-size: 14px;
+    margin: 5px 0px 0px 18px;
+    color: white;
+}
+
+.icon-notify i {
+    font-size: 12px;
+    padding: 0px 1px;
+}
+
+.icon-notify i:nth-child(3) {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.zone-calc {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.zone-calc span:nth-child(1) {
+    color: #555978;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 18px;
+}
+
+.zone-calc span:nth-child(2) {
+    color: white;
+    font-size: 42px;
+    padding-right: 18px;
+}
+
+.content-btn {
+    padding: 20px 0 12px 0;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #1E174E;
+    cursor: pointer;
+    margin: 3px;
+    transition: font-size 100ms ease;
+}
+
+.btn:active {
+    font-size: 18px;
+}
+
+.btn-command {
+    font-size: 16px;
+    background-color: #D1CEFB;
+    color: #6250DE;
+    transition: font-size 100ms ease;
+}
+
+.btn-command:active {
+    font-size: 14px;
+}
+
+#line-one button:nth-child(1),
+#line-five button:nth-child(3) {
+    background-color: #6250DE;
+    color: white;
+}
+
+#line-five button:nth-child(1) {
+    width: 110px;
+    text-align: left;
+    padding-left: 20px;
+}
