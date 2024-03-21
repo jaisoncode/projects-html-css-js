@@ -6,7 +6,6 @@
 
 body {
     font-family: "Hind Siliguri", sans-serif;
-    ;
     background-color: #19181C;
     display: flex;
     height: 100vh;
@@ -97,6 +96,7 @@ input::-webkit-inner-spin-button{
 #result-IMC div {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
 
 #result-value{
@@ -107,7 +107,7 @@ input::-webkit-inner-spin-button{
 
 #result-value + span{
     color:  white;
-    margin-top: -12px;
+    margin-top: -8px;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -118,4 +118,5 @@ input::-webkit-inner-spin-button{
     text-align: center;
     align-self: center;
     font-weight: 300;
+    margin-top: 12px;
 }
