@@ -3,7 +3,13 @@ const operationUsed = document.querySelector('#operation-used');
 const ResultCalc = document.querySelector('#operation-result');
 
 let clock = new Date();
-document.querySelector("#hour").textContent = clock.getHours() + ":" + clock.getMinutes();
+let hours = clock.getHours();
+let minutes = clock.getMinutes();
+
+hours = hours < 10 ?  "0" + hours:minutes;
+minutes = minutes < 10 ?  "0" + minutes:minutes;
+
+document.querySelector("#hour").textContent = clock.getHours() + ":" + minutes;
 
 //botoes da calculadora
 const botoes = document.querySelectorAll('.btn');
