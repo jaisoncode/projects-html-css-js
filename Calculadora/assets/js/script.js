@@ -2,10 +2,8 @@
 const operationUsed = document.querySelector('#operation-used');
 const ResultCalc = document.querySelector('#operation-result');
 
-function updatePrevios() {
-    operationUsed.textContent = expressionUsed;
-    ResultCalc.textContent = resultado;
-}
+let clock = new Date();
+document.querySelector("#hour").textContent = clock.getHours() + ":" + clock.getMinutes();
 
 //botoes da calculadora
 const botoes = document.querySelectorAll('.btn');
@@ -59,6 +57,11 @@ botoes.forEach(button => {
         calulator()
     });
 });
+
+function updatePrevios() {
+    operationUsed.textContent = expressionUsed;
+    ResultCalc.textContent = resultado;
+}
 
 function addCaracter(button) {
     adicionar += button;
