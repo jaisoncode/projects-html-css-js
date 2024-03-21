@@ -71,6 +71,7 @@ input::-webkit-inner-spin-button{
 
 .input-container {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .img-input {
