@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #ffc835, #ffcc3a, #ffd13f, #ffd544, #ffd949, #ffd949, #ffd949, #ffd949, #ffd544, #ffd13f, #ffcc3a, #ffc835);
+}
+
+.container-geral {
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px;
+}
+
+#password-content {
+    border-radius: 3px;
+    height: 45px;
+    width: 95%;
+    box-shadow: 0px 0px 3px 1px;
+    outline: none;
+    padding-left: 5%;
+}
+
+.content-itens {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+#length-char {
+    width: 45px;
+    box-shadow: 0px 0px 3px 1px;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+}
+
+input {
+    border: #292929 2px solid;
+    width: 20px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to right top, #292929, #2b2b2b, #2e2d2d, #30302f, #323231);
+    
+}
+
+button:hover{
+    opacity: .9;
+}
+
+.content-itens input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 1px;
+}
+
+/* Estilizando o estado de checked */
+.content-itens input[type="checkbox"]:checked {
+    background-color: #292929;
+    box-shadow: none;
+}
+
+/* Estilizando a marcação dentro do box */
+.content-itens input[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
