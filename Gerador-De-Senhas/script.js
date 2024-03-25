@@ -1,8 +1,7 @@
+const btnCopy = document.querySelector('.fa-solid');
+
 let ramdonChar = "";
 let password = "";
-console.log(ramdonChar)
-console.log(password)
-
 
 document.querySelector('#button-generator').addEventListener('click', function () {
     let ramdonChar = "";
@@ -14,7 +13,7 @@ document.querySelector('#button-generator').addEventListener('click', function (
     const number = document.querySelector('#number');
     const symbols = document.querySelector('#symbols');
 
-    
+
     if (upperCase.checked) ramdonChar += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     if (lowerCase.checked) ramdonChar += 'abcdefghijklmnopqrstuvwxyz';
     if (symbols.checked) ramdonChar += '!@#$%^&*()_+-=[]{}|;:,.<>?';
@@ -24,6 +23,16 @@ document.querySelector('#button-generator').addEventListener('click', function (
         const randomIndex = Math.floor(Math.random() * ramdonChar.length);
         password += ramdonChar.charAt(randomIndex);
     }
-    console.log(password);
-    document.querySelector('#password-content').innerHTML = password;
+    document.querySelector('#password-content').textContent = password;
+});
+
+btnCopy.addEventListener('click', function () {
+    const passwordContent = document.querySelector('#password-content').textContent;
+
+    if (passwordContent == "") {
+        alert('Primeiro gere uma senha!')
+    } else {
+        navigator.clipboard.writeText(passwordContent);
+        alert('Senha copiada para a área de transferência!');
+    }
 });
