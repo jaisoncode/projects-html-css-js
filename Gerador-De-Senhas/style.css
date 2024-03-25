@@ -22,6 +22,10 @@ body {
     box-shadow: 0px 0px 3px 1px;
 }
 
+.container-geral div {
+    position: relative;
+}
+
 #password-content {
     width: 95%;
     border-radius: 3px;
@@ -30,13 +34,25 @@ body {
     outline: none;
     padding-left: 5%;
     font-size: 18px;
-    text-align: center;
     line-height: 42px;
     cursor: text;
-    text-wrap: nowrap;
-    text-overflow: inherit;
-    
 }
+
+.container-geral div i {
+    position: absolute;
+    padding: 11px;
+    right: 5px;
+    top: 3px;
+    color: white;
+    background-color: #292929;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container-geral div i:hover {
+    opacity: .8;
+}
+
 
 .content-itens {
     margin: 15px 0;
@@ -68,10 +84,10 @@ button {
     cursor: pointer;
     color: white;
     background-image: linear-gradient(to right top, #292929, #2b2b2b, #2e2d2d, #30302f, #323231);
-    
+
 }
 
-button:hover{
+button:hover {
     opacity: .9;
 }
 
