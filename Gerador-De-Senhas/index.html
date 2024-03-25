@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Senhas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="container-geral">
         <h1>Gerador de senhas</h1>
-        <input type="text" placeholder="senhaaaaaaaaaaaaaaaa" id="password-content">
+        <p  id="password-content"></p>
         <form>
             <div class="content-itens">
                 <label for="length-char">Quantidade de caracteres</label>
-                <input  type="number" name="length-char" id="length-char">
+                <input  type="number" name="length-char" min="1" max="20" id="length-char">
             </div>
 
             <div class="content-itens">
                 <label for="uppercase">Adicionar letras maiúsculas</label>
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="uppercase-char" id="uppercase-char">
             </div>
             <div class="content-itens">
-                <label for="uppercase">Adicionar letras minúsculas</label>
-                <input type="checkbox" name="" id="">
+                <label for="lowercase">Adicionar letras minúsculas</label>
+                <input type="checkbox" name="lowercase-char" id="lowercase-char">
             </div>
             <div class="content-itens">
-                <label for="uppercase">Adicionar números</label>
-                <input type="checkbox" name="" id="">
+                <label for="number">Adicionar números</label>
+                <input type="checkbox" name="number" id="number">
             </div>
             <div class="content-itens">
-                <label for="uppercase">Adicionar símbolos</label>
-                <input type="checkbox" name="" id="">
+                <label for="symbols">Adicionar símbolos</label>
+                <input type="checkbox" name="symbols" id="symbols">
             </div>
-            <button type="button">Gerar senhar</button>
+            <button type="button" id="button-generator">Gerar senhar</button>
         </form>
 
 
