@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F6F8FC;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    min-width: 35rem;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+
+}
+.navbar div { 
+    width: 91rem;
+    min-width: 35rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 7rem;
+    border-radius: 1rem ;
+}
+
+.navbar div img {
+    width: 4rem;
+    height: 4rem;
+    align-self: center;
+}
+
+.navbar span {
+    margin-left: 1rem;
+    align-self: center;
+    font-size: 2.5rem;
+    color: #3c454e;
+    font-weight: 600;
+}
+
+.main-content {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.content-search {
+    width: 100%;
+    max-width: 91rem;
+    min-width: 35rem;
+    gap: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search-name-or-id {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 4.5rem;
+    color: #2e353b;
+    text-align: center;
+    font-weight: 500;    
+}
+
+#search-name-or-id::placeholder{
+    color: #e0e0e0;
+}
+
+#search-poke {
+    align-self: end;
+    color: #2e353b;
+    font-weight: 600;  
+}
+
+#search-poke input {
+    border: 1px solid #2e353b;
+    outline: none;
+    color: #2e353b;
+    text-align: center;
+    font-weight: 500;
+    width: 6rem;
+    height: 3.2rem;
+    border-radius: .5rem;
+}
+
+#search-poke input::placeholder {
+    color: #e0e0e0;
+}
+
+#search-poke label {
+    margin: 0 .5rem 0 1rem;
+}
+
+.content-card {
+    margin: 1.5rem 2rem;
+    max-width: 100rem;
+    min-width: 35rem;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+    padding: 1rem  2rem;
+}
+
+.poke-card {
+    width: 28rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+}
+
+.desc-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.id-poke {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #566370;
+}
+
+.name-poke {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #2e353b;
+}
+
+.profile-poke {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    width: 12rem;
+
+}
+
+.profile-poke img {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.type-poke {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    padding: 0rem 0 1.7rem 0;
+}
+
+.name-type {
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .8rem 1.2rem;
+    letter-spacing: .1rem;
+}
+
+/* Corres dos tipos dos pokemons */
+.normal {
+    background-color: #A0A0A0;
+}
+
+
+.fire {
+    background-color: #FA7B34;
+}
+
+
+.water {
+    background-color: #91B9FF;
+}
+
+
+.electric {
+    background-color: #ffd000;
+}
+
+
+.grass {
+    background-color: #4BE02B;
+}
+
+
+.ice {
+    background-color: #00B7EE;
+}
+
+
+.fighting {
+    background-color: #E57163;
+}
+
+
+.poison {
+    background-color: #f074be;
+}
+
+
+.ground {
+    background-color: #FFCD83;
+}
+
+
+.flying {
+    background-color: #8899FF;
+}
+
+
+.psychic {
+    background-color: #DC78C8;
+}
+
+
+.bug {
+    background-color: #AABB22;
+}
+
+
+.rock {
+    background-color: #A07850;
+}
+
+
+.ghost {
+    background-color: #8C78F0;
+}
+
+.dragon {
+    background-color: #7766ED;
+}
+
+
+.dark {
+    background-color: #A0A0A0;
+}
+
+
+.steel {
+    background-color: #B4AFCC;
+}
+
+.fairy {
+    background-color: #FF7EB8;
+}
+
+.ground {
+    background-color: #CCA142;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    
+}
+
+.loader-bar {
+    height: 20px;
+    width: 0;
+    background-color: #4CAF50;
+}
+
+.loader-text {
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    margin-top: 5px; /* Espaço acima da porcentagem */
+}
